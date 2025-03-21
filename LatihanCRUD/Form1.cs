@@ -251,6 +251,11 @@ namespace LatihanCRUD
             }
         }
 
-       
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadData();
+            MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.RowCount}",
+                "Lagi Loading Leee DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
